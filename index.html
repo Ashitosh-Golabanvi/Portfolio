@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Portfolie Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/22a14ab33c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <div class="text-content">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Ashitosh</span><br>Golabanvi From India</h1>
+                </div>
+                <div class="header-image">
+                    <video autoplay muted loop>
+                        <source src="images/background.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Ashitosh Golabanvi, a graduate with a Bachelor of Engineering in Computer Science & Engineering 
+                    from KLE Dr. M.S. Sheshgiri College of Engineering and Technology, Belgaum. I am seeking an 
+                    opportunity to work in a challenging environment where I can utilize my skills and knowledge to contribute 
+                    to the growth of the organization.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Languages like: Python, Core Java, C, PHP. Languages are used to implement the backend of Web Applications.</li>
+                            <li><span>Web Technologies</span><br>Web Technologies like: HTML, CSS, Javascript. Which Are used to implement the front end websites.</li>
+                            <li><span>DataBases</span><br>Databases like: MySQL,MongoDB. Which are used to store the data.</li>
+                            <li><span>Frameworks</span><br>Frameworks like: Django, React-JS, Which are used to implement the Web-Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Varcons Technologies Pvt Ltd</span><br>Implemented Basic Projects in Java Development .</li>
+                            <li><span> Advanced Technologies for Smarter and Secured Life</span><br>Implemented Projects of IOT and Computer Vision.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Computer Science in Bachelor Of Engineering from KLE Collage Of Engineering Belgaum.</li>
+                            <li><span>2020</span><br>Computer Science in Diploma from Polytechnic Collage Nidasoshi.</li>
+                            <li><span>2017</span><br>SSLC from S D High School Sankeshwar.</li>                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+  <!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects Or My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Student Registration Application</h2>
+                <p>Student registration is software system used by educational institutions to manage enrollment process of students.</p>
+                <a href="https://ashitosh-golabanvi.github.io/Student-Registration-Application/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>To-Do List Web Application </h2>
+                <p>A To-Do List Web Application is a tool that allows users to create, manage, and organize tasks or items they need to accomplish.</p>
+                <a href="https://ashitosh-golabanvi.github.io/To-Do-List-Application/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>EV Charging Station Application</h2>
+                <p>The application allows EV owners to find nearby charging infrastructure that is hosted by peers on a pay-as-you-use basis.</p>
+                <a href="https://github.com/Ashitosh-Golabanvi/Electric_Vehicle_Charging_Station_Web_Application.git">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Online Food Ordering System</h2>
+                <p>An “Online Food Ordering System” is a web designed application, primarily used in food delivery industry.</p>
+                <a href="https://github.com/Ashitosh-Golabanvi/Online_Food_Ordering_System_Web_Application.git">Learn more</a>
+            </div>
+        </div>
+        
+        <!-- See More Button -->
+        <button id="see-more-btnn" class="btn">See More</button>
+
+        <!-- Additional Services (initially hidden) -->
+        <div id="more-services" class="services-list" style="display: none;">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Registration Web Application</h2>
+                <p>The Registration-Application project aims to develop a web-based application that allows users to register  Basic Information</p>
+                <a href="https://ashitosh-golabanvi.github.io/Registration-Application/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Weather Web Application</h2>
+                <p>The Weather Web Application is a dynamic and user-friendly platform designed to provide real-time weather information and forecasts to users.</p>
+                <a href="https://github.com/Ashitosh-Golabanvi/Weather-Web-Application.git">Learn more</a>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Certifications -->
+    <!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="Work 1">
+                <div class="layer">
+                    <h3>Start Your Career As Python Programmer</h3>
+                    <a href="https://www.ude.my/UC-c4aaa1dc-5243-43c4-aff5-0b826f6c049e"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Work 2">
+                <div class="layer">
+                    <h3>Workshop On ChatGPT & AI Tools</h3>
+                    <a href="https://www.linkedin.com/posts/ashitosh-golabanvi_live-workshop-on-chatgpt-and-ai-tools-activity-7119227932660703232-tjkn?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 3">
+                <div class="layer">
+                    <h3>Internship On Java Development</h3>
+                    <a href="https://v.certiefy.com/S0VZR0VOMuKLhZRVhrICUE45VnNRL_KwLzngJDgexTyaAa3zee-Occ6bCzV4KhuVGROLKViatNTUAce9oqopI8u04UD7fcLLHFJp6ufOItdB8oMAvwXfiqcBp7ymo1JegkYbx6lnX4wD0UUTux5a6sI7cI44OS27ero43NTVVxgvyJuf-91aZxl47fStyWAMR4A8dM5w06PzjAXk515fh6XZ2qz3iRxGFGNwu0rmKrXxWuNbtebI0YKrnVM2DfcgGUZ_Qq9LmqFrS39lfq4OEBsXXD5jQKrMlMzX86C-QoxUU-_PhGCblaLh4ouFftXq6Lsm1dIpn6lewdwD7XKmfD9cV8IXpIRcU_m15n0="><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png" alt="Work 4">
+                <div class="layer">
+                    <h3>Docker Essentials: A Developer Introduction</h3>
+                    <a href="https://courses.cognitiveclass.ai/certificates/028f193b0010430e9f11ce5a507342b1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- See More Button -->
+        <button id="see-more-btn" class="btn">See More</button>
+
+        <!-- Additional Work (initially hidden) -->
+        <div id="more-work" class="additional-work" style="display: none;">
+            <div class="work">
+                <img src="images/work-5.png" alt="Work 5">
+                <div class="layer">
+                    <h3>Internship Programme On IOT & Computer Vision Related Projects</h3>
+                    <a href="https://drive.google.com/file/d/10omDVVzBH8OxpWrkdiDR6BZoS8W2wa-n/view?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+
+     <!-- Contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ashitoshgv.09@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9341697715</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ashitosh-golabanvi"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ashitosh-Golabanvi"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Ashitosh Golabanvi.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ashitosh. Made By <i class="fa-solid fa-heart"></i> Love & Affection</p>
+        </div>
+      </div>
+
+
+
+<!-- Services See More Button -->
+
+<script>
+    document.getElementById('see-more-btnn').addEventListener('click', function() {
+        var moreServices = document.getElementById('more-services');
+        if (moreServices.style.display === 'none' || moreServices.style.display === '') {
+            moreServices.style.display = 'grid'; // Use 'grid' to maintain the same layout
+            this.textContent = 'See Less';
+        } else {
+            moreServices.style.display = 'none';
+            this.textContent = 'See More';
+        }
+    });
+    </script>
+    
+
+
+
+
+
+<!-- See MOre Button JS -->
+<script>
+    document.getElementById('see-more-btn').addEventListener('click', function() {
+        var moreWork = document.getElementById('more-work');
+        if (moreWork.style.display === 'none' || moreWork.style.display === '') {
+            moreWork.style.display = 'flex';
+            this.textContent = 'See Less';
+        } else {
+            moreWork.style.display = 'none';
+            this.textContent = 'See More';
+        }
+    });
+    </script>
+    
+         
+
+    
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    
+    
+    
+    <!-- Menu And Close Buttons JS -->
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+<!-- Contact Form JS -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwoxLObo5Q2qxgybDZFXfRBPlo42DyNY9PoT6p-b375QojqzCahu5RD9rIQYPeERnZ3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
